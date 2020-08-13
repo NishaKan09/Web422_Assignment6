@@ -13,10 +13,10 @@ export class PostTableComponent implements OnInit, OnDestroy {
   blogPosts: Array<BlogPost> = [];
   private posts;
 
-  constructor(private data: PostService, private router: Router) { }
+  constructor(private postServ: PostService, private router: Router) { }
 
   ngOnInit(): void {
-    this.posts = this.data.getAllPosts().subscribe(data => this.blogPosts = data);
+    this.posts = this.postServ.getAllPosts().subscribe(data => this.blogPosts = data);
   }
 
   ngOnDestroy() {

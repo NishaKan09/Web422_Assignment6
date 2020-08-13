@@ -12,7 +12,7 @@ export class NewPostComponent implements OnInit {
   blogPost: BlogPost = new BlogPost();
   tags: string;
 
-  constructor(private data: PostService, private router: Router) { }
+  constructor(private postServ: PostService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -23,6 +23,7 @@ export class NewPostComponent implements OnInit {
     this.blogPost.postDate = new Date().toLocaleDateString();
     this.blogPost.postedBy = 'WEB422 Student';
     this.blogPost.views = 0;
-    this.data.newPost(this.blogPost).subscribe( () => this.router.navigate(['/admin']));
+    
+    this.postServ.newPost(this.blogPost).subscribe( () => this.router.navigate(['/admin']));
   }
 }
