@@ -8,24 +8,27 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "postinstall": "ng build --prod"
+        "heroku-postbuild": "ng build --prod"
     },
     "private": true,
     "dependencies": {
         "@angular/animations": "~10.0.4",
+        "@angular/cli": "~10.0.3",
         "@angular/common": "~10.0.4",
         "@angular/compiler": "~10.0.4",
+        "@angular/compiler-cli": "~10.0.4",
         "@angular/core": "~10.0.4",
         "@angular/forms": "~10.0.4",
         "@angular/platform-browser": "~10.0.4",
         "@angular/platform-browser-dynamic": "~10.0.4",
         "@angular/router": "~10.0.4",
-        "angular-cli": "1.0.0-beta.28.3",
         "cors": "^2.8.5",
         "express": "^4.17.1",
         "mongoose": "^5.9.29",
+        "path": "^0.12.7",
         "rxjs": "~6.5.5",
         "tslib": "^2.0.0",
+        "typescript": "~3.9.5",
         "zone.js": "~0.10.3"
     },
     "devDependencies": {
@@ -51,5 +54,9 @@
     "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.",
     "main": "karma.conf.js",
     "author": "Nishantha Kanagasapabathy",
-    "license": "ISC"
+    "license": "ISC",
+    "engines": {
+        "node": "14.4.0",
+        "npm": "6.14.5"
+    }
 }
