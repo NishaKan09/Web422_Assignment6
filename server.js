@@ -4,8 +4,8 @@ const app = express();
 
 // Serve static files....
 app.use(express.static(__dirname + '/dist/web422-a4'));
-console.log(__dirname)
-    // Send all requests to index.html
+//console.log(__dirname)
+// Send all requests to index.html
 app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname + '/dist/web422-a4/index.html'));
 });
