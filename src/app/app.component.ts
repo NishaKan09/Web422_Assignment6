@@ -8,7 +8,7 @@
  * Student ID: 135015162 
  * Date: July 31st, 2020 
  *
- * Online Link: https://young-waters-79565.herokuapp.com/api/posts?page=1&perPage=6
+ * Online Link: https://young-waters-79565.herokuapp.com/home
  *
  **********************************************************************************************/
 
